@@ -10,6 +10,18 @@ const nextConfig = {
         protocol: "https",
         hostname: "scontent-sin6-1.xx.fbcdn.net",
       },
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "islamicquizcontest.xyz",
+      },
+      {
+        protocol: "https",
+        hostname: "deendarpartner.com",
+      },
     ],
   },
   experimental: {

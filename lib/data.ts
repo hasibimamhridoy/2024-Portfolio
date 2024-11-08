@@ -57,15 +57,26 @@ export const projectsData = [
     title: "DeendarPartner - MERN Stack Website",
     description:
       "As a full-stack developer, I've been working on DeendarPartner for over a year, continuously adding new features and improving its performance. The project uses React, Next.js,Expressjs, MongoDB, Tailwind",
-    tags: ["React", "Next.js", "MongoDB", "Expressjs", "ShadcnUI"],
+    tags: [
+      "React",
+      "Next.js",
+      "MongoDB",
+      "Expressjs",
+      "ShadcnUI",
+      "Redux",
+      "rtk query",
+      "Mongoose",
+    ],
     imageUrl: dpProject,
+    href: "https://deendarpartner.com/",
   },
   {
     title: "Islamic Quiz Contest",
     description:
       "This project is a dynamic platform for hosting Islamic quiz contests. As the front-end developer, I regularly update the website with new features,The stack includes Next.js(with server),MUI,TypeScript,Tailwind.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    tags: ["React", "Next.js", "TypeScript", "Mui", "Tailwind", "Mongoose"],
     imageUrl: iqcProject,
+    href: "https://islamicquizcontest.xyz/",
   },
 ] as const;
 
