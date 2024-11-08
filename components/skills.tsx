@@ -35,13 +35,13 @@ export default function Skills() {
           <CardContainer
             key={index}
             className="bg-transparent"
-            containerClassName="h-fit cursor-pointer hover:bg-transparent"
+            containerClassName="h-fit cursor-pointer dark:bg-transparent bg-transparent hover:bg-transparent"
           >
             <CardItem
               translateZ="100"
               rotateX={20}
               rotateZ={-10}
-              className="w-full"
+              className="w-full dark:bg-transparent bg-transparent"
             >
               <motion.li
                 className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"

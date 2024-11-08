@@ -1,37 +1,49 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-// import corpcommentImg from "../public/corpcomment.png";
-// import rmtdevImg from "@/public/rmtdev.png";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
+
+import { CiHome } from "react-icons/ci";
+import { GrContact } from "react-icons/gr";
+import { IoCodeWorking } from "react-icons/io5";
+import { SiAboutdotme } from "react-icons/si";
+
+import { FaCodepen } from "react-icons/fa";
+import { GiSkills } from "react-icons/gi";
+
 import dpProject from "../public/dp_project.png";
 import iqcProject from "../public/iqc_project.png";
 export const links = [
   {
     name: "Home",
     hash: "#home",
+    icon: React.createElement(CiHome),
   },
   {
     name: "About",
     hash: "#about",
+    icon: React.createElement(SiAboutdotme),
   },
   {
     name: "Projects",
     hash: "#projects",
+    icon: React.createElement(IoCodeWorking),
   },
   {
     name: "Skills",
     hash: "#skills",
+    icon: React.createElement(FaCodepen),
   },
   {
     name: "Experience",
     hash: "#experience",
+    icon: React.createElement(GiSkills),
   },
   {
     name: "Contact",
     hash: "#contact",
+    icon: React.createElement(GrContact),
   },
-] as const;
+];
 
 export const experiencesData = [
   {
