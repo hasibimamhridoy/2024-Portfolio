@@ -33,6 +33,7 @@ export default function Skills() {
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <CardContainer
+            key={index}
             className="bg-transparent"
             containerClassName="h-fit cursor-pointer hover:bg-transparent"
           >
