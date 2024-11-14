@@ -3,6 +3,92 @@
 @tailwind utilities;
 
 @layer base {
+  /* Light mode colors */
+  .markdown-body {
+    color: hsl(var(--foreground));
+    background-color: hsl(var(--background));
+  }
+
+  .markdown-body h1,
+  .markdown-body h2,
+  .markdown-body h3,
+  .markdown-body h4,
+  .markdown-body h5,
+  .markdown-body h6 {
+    color: hsl(var(--foreground));
+    font-weight: bold;
+  }
+
+  .markdown-body p {
+    color: hsl(var(--foreground));
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .markdown-body a {
+    color: hsl(var(--primary));
+    text-decoration: underline;
+    font-weight: medium;
+  }
+
+  .markdown-body strong {
+    color: hsl(var(--foreground));
+    font-weight: bold;
+  }
+
+  .markdown-body blockquote {
+    border-left: 4px solid hsl(var(--muted));
+    padding-left: 1em;
+    color: hsl(var(--muted-foreground));
+    font-style: italic;
+    margin: 1.5rem 0;
+  }
+
+  .markdown-body ul,
+  .markdown-body ol {
+    padding-left: 1.5rem;
+  }
+
+  .markdown-body li {
+    margin-top: 0.5rem;
+    color: hsl(var(--foreground));
+  }
+
+  .markdown-body code {
+    /* background-color: hsl(var(--muted)); */
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    color: hsl(var(--foreground));
+  }
+
+  /* Dark mode adjustments */
+  .dark .markdown-body {
+    color: hsl(var(--foreground));
+    background-color: hsl(var(--background));
+  }
+
+  .dark .markdown-body a {
+    color: hsl(var(--primary-foreground));
+  }
+
+  .dark .markdown-body blockquote {
+    border-left-color: hsl(var(--secondary));
+    color: hsl(var(--secondary-foreground));
+    background-color: "black";
+    color: red;
+  }
+
+  .dark .markdown-body code {
+    /* background-color: hsl(var(--secondary)); */
+    color: hsl(var(--primary));
+  }
+  .dark .markdown-body pre {
+    background-color: hsl(var(--secondary));
+    color: hsl(var(--primary));
+  }
+}
+
+@layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
@@ -58,12 +144,3 @@
     --chart-5: 340 75% 55%;
   }
 }
-
-/* @layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-} */
