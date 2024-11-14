@@ -3,7 +3,6 @@ import { CgWorkAlt } from "react-icons/cg";
 
 import { CiHome } from "react-icons/ci";
 import { GrContact } from "react-icons/gr";
-import { IoCodeWorking } from "react-icons/io5";
 import { SiAboutdotme } from "react-icons/si";
 
 import { FaCodepen } from "react-icons/fa";
@@ -22,11 +21,11 @@ export const links = [
     hash: "#about",
     icon: React.createElement(SiAboutdotme),
   },
-  {
-    name: "Projects",
-    hash: "#projects",
-    icon: React.createElement(IoCodeWorking),
-  },
+  // {
+  //   name: "Projects",
+  //   hash: "#projects",
+  //   icon: React.createElement(IoCodeWorking),
+  // },
   {
     name: "Skills",
     hash: "#skills",
